@@ -10,16 +10,60 @@
     <!-- link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     <!-- link to CSS Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 
 </head>
 <body>
-    
 
+    <Div class="jumbotron">
+
+        <form>
+            <!-- Search Bar Div -->
+            <div class="form-group">
+                <label for="search-input">Search a Topic!!</label>
+                <input type="text" class="form-control" id="search-input" placeholder="enter topic here!">
+            </div>
+            <!-- Amound of results requested by user -->
+            <div class="form-group">
+                <label for="search-amount">How Many Gifs Do You Need? </label>
+                <select class="form-control" id="search-amount">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+            </div>
+            <div>
+
+                <button id="submit-button" type="submit" class="btn btn-primary mb-2">Submit</button>
+
+            </div>  
+                
+        </form>
+    
+        <!-- Dynamic Button Div -->
+        <div class="container" id="button-container">
+
+            <div id="button-view"></div>
+
+        </div>
+
+    </Div>
+
+    <!-- Dynamic Gif Div pulled from API -->
+
+    <div id="gif-view"></div>
+
+    <!-- link to bootstrap and jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- link to Javascript -->
-    <script src="/assets/app.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+    
 </body>
 </html>
