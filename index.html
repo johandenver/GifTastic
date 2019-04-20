@@ -6,64 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Giftastic App!</title>
-
+    <!-- link to googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
     <!-- link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     <!-- link to CSS Stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- link to jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
 
 </head>
 <body>
 
-    <Div class="jumbotron">
-
+    <div class="jumbotron">
+        <div id="alert-message" class="hide">
+            <p>Oops, please gif your topic entry a review and search again!</p>
+        </div>
+        <h1>Gif Me a Break!!</h1>
         <form>
             <!-- Search Bar Div -->
             <div class="form-group">
-                <label for="search-input">Search a Topic!!</label>
-                <input type="text" class="form-control" id="search-input" placeholder="enter topic here!">
+                <label for="gif-topics">Gif me a Topic!</label>
+                <input type="text" class="form-control" id="gif-topics" placeholder="enter topic here!">
             </div>
+
+            <!-- Submit button to generate new topic button -->
+            <div>
+                <button id="submit-button" type="submit" class="btn btn-primary mb-2">Submit, and I'll gif you a button!</button>
+            </div>  
+
             <!-- Amound of results requested by user -->
             <div class="form-group">
-                <label for="search-amount">How Many Gifs Do You Need? </label>
+                <label for="search-amount">How many can I gif you? Gif me a number! </label>
                 <select class="form-control" id="search-amount">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
                 <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
                 </select>
             </div>
-            <div>
-
-                <button id="submit-button" type="submit" class="btn btn-primary mb-2">Submit</button>
-
-            </div>  
+            
                 
         </form>
     
         <!-- Dynamic Button Div -->
-        <div class="container" id="button-container">
-
-            <div id="button-view"></div>
+        <div class="container rounded p=3">
+            <label>I gif you buttons..    so gif 'em a click!</label>
+            <div id="gif-button"></div>
 
         </div>
 
     </Div>
 
-    <!-- Dynamic Gif Div pulled from API -->
-
+    <!-- Dynamic Gif Div pulled from API go here: -->
+    <h3>Gif 'em a click to animate...</h3>
     <div id="gif-view"></div>
 
     <!-- link to bootstrap and jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- link to Javascript -->
     <script type="text/javascript" src="assets/app.js"></script>
-    
+
 </body>
 </html>

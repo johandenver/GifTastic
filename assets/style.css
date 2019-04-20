@@ -1,7 +1,85 @@
 body {
-    background: lightblue;
+    background: #411158;
+    color: #ffffff;
+    font-family: 'Paytone One', sans-serif;
 }
 
 .jumbotron {
-    background: lightgrey;
+    background-image: url(../assets/images/galaxy.jpg);
+    background-size: cover;
+    padding-top: 5%;
+
+}
+
+button, .topic-btn {
+    text-transform: capitalize;
+}
+
+.container {
+    background: #383d8f;  
+}
+
+.topic-btn {
+    margin: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#submit-button {
+    color: #ffffff;
+    background: #383d8f; 
+    border-color: #8064A2;
+}
+
+label {
+    font-size: 30px;
+}
+
+.image-gif {
+    border: 5px solid #8064A2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gif {
+    margin: 10px;
+    display: inline-block; 
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+}
+
+.gif:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+#gif-view {
+    text-align: center;
+}
+    
+#alert-message {
+    width: 100%;
+    position: absolute;
+    background-color: hsl(17, 92%, 51%);
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    max-width: 100%;
 }
